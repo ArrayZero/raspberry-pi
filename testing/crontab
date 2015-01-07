@@ -1,0 +1,5 @@
+
+crontab -e
+@reboot sudo python /home/pi/timelapse/raspiLapseCam.py &
+
+crontab -l
