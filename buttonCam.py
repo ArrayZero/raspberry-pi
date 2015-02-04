@@ -23,6 +23,7 @@ initMins = "%02d" % (d.minute)
 
 # camera lapse loop function
 def lapseLoop():
+    os.system("/opt/vc/bin/tvservice -o")
     GPIO.output(18,0)
     time.sleep(.5)
     GPIO.output(18,1)
