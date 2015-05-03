@@ -43,7 +43,7 @@ def lapseLoop():
 		fileCount += 1
 		moveCount += 1
 
-		if moveCount == 5
+		if (moveCount == 5):
 			moveCount = 0
 			p.do_pan (int(x))
 			x += 1
