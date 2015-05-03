@@ -2,7 +2,7 @@
 import os, sys
 import time
 import RPi.GPIO as GPIO
-import pi-pan/pipan
+import pipan
 
 #set pan library as p
 p = pipan.PiPan()
