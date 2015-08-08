@@ -52,14 +52,14 @@ if __name__ == '__main__':
             print "sats ", gpsc.satellites
             time.sleep(0.5)
 
+    #Ctrl C
+    except KeyboardInterrupt:
+        print "User cancelled"
+
     #Error
     except:
         print "Unexpected error:", sys.exc_info()[0]
         raise
-
-    #Ctrl C
-    except KeyboardInterrupt:
-        print "User cancelled"
 
     finally:
         print "Stopping gps controller"

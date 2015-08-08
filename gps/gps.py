@@ -11,7 +11,7 @@ try:
 	gpscontrol = GpsController()
 	gpscontrol.start()
 
-	      #wait for controllers to startup and gps fix
+	#wait for controllers to startup and gps fix
 	time.sleep(3)
 	#create data file
 	datafile = open("data.csv", "w")
@@ -20,7 +20,7 @@ try:
 	datadrawer = DataDrawer()
 
 	#loop
-	while(vidcontrol.isAlive()):
+	while(true):
 	    #get framecount
 	    framecount = vidcontrol.getFrameCount()
 	    
