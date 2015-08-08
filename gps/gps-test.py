@@ -4,8 +4,6 @@ import time
 import datetime
 
 
-
-
 try:
 	print "starting gps contoller"
 	gpscontrol = GpsController()
