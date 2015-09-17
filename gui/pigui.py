@@ -18,7 +18,7 @@ Stesla  = "TSLA:  " + ystockquote.get_today_open('TSLA')
 
 
 #get date & time set for init
-dateNow = time.strftime("Today: %A %d. %B %Y\n")
+dateNow = time.strftime("%A %d. %B %Y\n")
 timeNow = time.strftime("%I:%M%p")
 
 #get weather set for init
@@ -38,7 +38,7 @@ root.configure(background='black')
 
 
 #sized window
-root.geometry("1200x500")
+root.geometry("800x400")
 
 #fullscreen window
 w, h = root.winfo_screenwidth(), root.winfo_screenheight()
@@ -68,7 +68,7 @@ text.insert(END, dateNow, 'big')
 text.insert(END, WeatherNow, 'big')
 text.configure(state=DISABLED)
 # text.pack()
-text.place(x = 10, y = 10, height=200, width=900)
+text.place(x = 10, y = 10, height=200, width=800)
 
 stocks = Text(root)
 stocks.configure(bg='#000000',state=NORMAL, highlightthickness = 0)
@@ -79,7 +79,7 @@ stocks.insert(END, Snflx, 'big')
 stocks.insert(END, Snike, 'big')
 stocks.insert(END, Sgopro, 'big')
 stocks.insert(END, Stesla, 'big')
-stocks.place(x = 10, y = 150, height=200, width=900)
+stocks.place(x = 10, y = 150, height=300, width=400)
 
 
 
