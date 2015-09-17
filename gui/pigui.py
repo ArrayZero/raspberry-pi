@@ -58,7 +58,7 @@ time = Text(root)
 time.configure(bg='#000000',state=NORMAL, highlightthickness = 0)
 time.tag_configure('big', justify = RIGHT, foreground='#ffffff', background="black", font=("Helvetica",30,"bold" ))
 time.insert(END, timeNow, 'big')
-time.place(x = 1030, y = 10, height=45, width=160)
+time.place(x = 500, y = 355, height=45, width=160)
 
 
 text = Text(root) #state normal = default makes text area editable diabale after setting contents
